@@ -1,0 +1,525 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the Signature Scarves collection from Winza Heritage. Enquire about designs, availability and delivery.">
+  <meta name="theme-color" content="#263d30">
+  <title>Signature Scarves | Winza Heritage</title>
+
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <style>
+    .detail-intro {
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .detail-intro .lead {
+      margin: 0 auto;
+    }
+
+    .breadcrumbs {
+      padding: 18px 0;
+      font-size: .85rem;
+      color: var(--muted);
+    }
+
+    .breadcrumbs a {
+      color: var(--rust);
+    }
+
+    .detail-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      margin-top: 34px;
+    }
+
+    .detail-product {
+      min-width: 0;
+      background: var(--cream);
+      border: 1px solid var(--line);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .detail-product:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(38, 61, 48, .09);
+    }
+
+    .detail-product-image {
+      height: 320px;
+      padding: 14px;
+      background: #f4efe7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .detail-product-image img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .detail-product-copy {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      align-items: flex-start;
+    }
+
+    .detail-product-copy h2 {
+      margin: 8px 0;
+      color: var(--forest);
+      font: 500 1.4rem 'Playfair Display', Georgia, serif;
+    }
+
+    .detail-product-copy p {
+      color: var(--muted);
+      font-size: .92rem;
+      margin-bottom: 18px;
+    }
+
+    .detail-product-copy .text-link {
+      margin-top: auto;
+    }
+
+    .availability-note {
+      padding: 22px;
+      margin-top: 36px;
+      background: #f8f1e6;
+      border-left: 3px solid var(--gold);
+      color: #615c50;
+    }
+
+    .availability-note p {
+      margin: 8px 0 12px;
+    }
+
+    .scarf-disclaimer {
+      margin-top: 20px;
+      font-size: .85rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      .detail-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+      }
+
+      .detail-product-image {
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .detail-gallery {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .detail-product-image {
+        height: 340px;
+      }
+
+      .detail-product-copy {
+        padding: 18px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .detail-product {
+        transition: none;
+      }
+
+      .detail-product:hover {
+        transform: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="announcement">
+    Transcending Cultural Boundaries · Heritage, style &amp; meaningful connection
+  </div>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Winza Heritage home">
+        <img src="assets/logo.jpg" alt="Winza Heritage logo">
+        <span class="brand-text">
+          Winza Heritage
+          <small>Carry your story</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button"
+              aria-label="Open navigation menu" aria-expanded="false">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="collections.html" aria-current="page">Collections</a>
+        <a href="about.html">About &amp; Consultancy</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container breadcrumbs">
+      <a href="index.html">Home</a> /
+      <a href="collections.html">Collections</a> /
+      <span>Signature Scarves</span>
+    </div>
+
+    <!-- Collection introduction -->
+    <section class="page-hero">
+      <div class="container detail-intro">
+        <span class="eyebrow">Culture · Craft · Connection</span>
+        <h1 class="display">Signature Scarves</h1>
+
+        <p class="lead">
+          Distinctive accessories for personal expression, thoughtful gifting
+          and meaningful cultural connections.
+        </p>
+
+        <p>
+          Explore the scarf photographs from Winza Heritage and contact us
+          to learn more about individual designs and current availability.
+        </p>
+
+        <div class="button-row" style="justify-content:center">
+          <a class="btn" href="#scarf-designs">Explore scarf designs ↓</a>
+          <a class="btn btn-outline"
+             href="https://wa.me/447301735163?text=Hello%20Winza%20Heritage%2C%20I%27d%20like%20to%20enquire%20about%20your%20signature%20scarves."
+             target="_blank" rel="noopener noreferrer">
+            Ask about scarves ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nine original client scarf photographs -->
+    <section class="section" id="scarf-designs">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">The collection</span>
+          <h2>Find a design that tells your story.</h2>
+          <p>
+            Browse the designs shown below. Contact Winza Heritage to confirm
+            availability, pricing, delivery and any other product details.
+          </p>
+        </div>
+
+        <div class="detail-gallery">
+
+          <article class="detail-product">
+            <div class="detail-product-image">
+              <img src="assets/collections/Signature%20Scarves.jpeg"
+                   alt="Winza Heritage signature scarf design 01"
+                   loading="lazy">
+            </div>
+            <div class="detail-product-copy">
+              <span class="eyebrow">Design 01</span>
+              <h2>Signature Scarf</h2>
+              <p>Discover this design and ask about current availability.</p>
+              <a class="text-link"
+                 href="https://wa.me/447301735163?text=Hello%20Winza%20Heritage%2C%20I%27d%20like%20to%20enquire%20about%20scarf%20design%2001."
+                 target="_blank" rel="noopener noreferrer">
+                Enquire about design 01 ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="detail-product">
+            <div class="detail-product-image">
+              <img src="assets/collections/Signature%20Scarves%20%282%29.jpeg"
+                   alt="Winza Heritage signature scarf design 02"
+                   loading="lazy">
+            </div>
+            <div class="detail-product-copy">
+              <span class="eyebrow">Design 02</span>
+              <h2>Signature Scarf</h2>
+              <p>Ask us about this scarf and its current availability.</p>
+              <a class="text-link"
+                 href="https://wa.me/447301735163?text=Hello%20Winza%20Heritage%2C%20I%27d%20like%20to%20enquire%20about%20scarf%20design%2002."
+                 target="_blank" rel="noopener noreferrer">
+                Enquire about design 02 ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="detail-product">
+            <div class="detail-product-image">
+              <img src="assets/collections/Signature%20Scarves%20%283%29.jpeg"
+                   alt="Winza Heritage signature scarf design 03"
+                   loading="lazy">
+            </div>
+            <div class="detail-product-copy">
+              <span class="eyebrow">Design 03</span>
+              <h2>Signature Scarf</h2>
+              <p>Explore this design and ask about ordering options.</p>
+              <a class="text-link"
+                 href="https://wa.me/447301735163?text=Hello%20Winza%20Heritage%2C%20I%27d%20like%20to%20enquire%20about%20scarf%20design%2003."
+                 target="_blank" rel="noopener noreferrer">
+                Enquire about design 03 ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="detail-product">
+            <div class="detail-product-image">
+              <img src="assets/collections/Signature%20Scarves%20%284%29.jpeg"
+                   alt="Winza Heritage signature scarf design 04"
+                   loading="lazy">
+            </div>
+            <div class="detail-product-copy">
+              <span class="eyebrow">Design 04</span>
+              <h2>Signature Scarf</h2>
+              <p>Contact us to learn more about this photographed design.</p>
+              <a class="text-link"
+                 href="https://wa.me/447301735163?text=Hello%20Winza%20Heritage%2C%20I%27d%20like%20to%20enquire%20about%20scarf%20design%2004."
+                 target="_blank" rel="noopener noreferrer">
+                Enquire about design 04 ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="detail-product">
+            <div class="detail-product-image">
+              <img src="assets/collections/Signature%20Scarves%20%285%29.jpeg"
+                   alt="Winza Heritage signature scarf design 05"
+                   loading="lazy">
+            </div>
+            <div class="detail-product-copy">
+              <span class="eyebrow">Design 05</span>
+              <h2>Signature Scarf</h2>
+              <p>Ask Winza Heritage about this design and availability.</p>
+              <a class="text-link"
+                 href="https://wa.me/447301735163?text=Hello%20Winza%20Heritage%2C%20I%27d%20like%20to%20enquire%20about%20scarf%20design%2005."
+                 target="_blank" rel="noopener noreferrer">
+                Enquire about design 05 ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="detail-product">
+            <div class="detail-product-image">
+              <img src="assets/collections/Signature%20Scarves%20%286%29.jpeg"
+                   alt="Winza Heritage signature scarf design 06"
+                   loading="lazy">
+            </div>
+            <div class="detail-product-copy">
+              <span class="eyebrow">Design 06</span>
+              <h2>Signature Scarf</h2>
+              <p>Find out more about this design directly from Winza Heritage.</p>
+              <a class="text-link"
+                 href="https://wa.me/447301735163?text=Hello%20Winza%20Heritage%2C%20I%27d%20like%20to%20enquire%20about%20scarf%20design%2006."
+                 target="_blank" rel="noopener noreferrer">
+                Enquire about design 06 ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="detail-product">
+            <div class="detail-product-image">
+              <img src="assets/collections/Signature%20Scarves%20%287%29.jpeg"
+                   alt="Winza Heritage signature scarf design 07"
+                   loading="lazy">
+            </div>
+            <div class="detail-product-copy">
+              <span class="eyebrow">Design 07</span>
+              <h2>Signature Scarf</h2>
+              <p>Ask about this scarf, delivery and current availability.</p>
+              <a class="text-link"
+                 href="https://wa.me/447301735163?text=Hello%20Winza%20Heritage%2C%20I%27d%20like%20to%20enquire%20about%20scarf%20design%2007."
+                 target="_blank" rel="noopener noreferrer">
+                Enquire about design 07 ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="detail-product">
+            <div class="detail-product-image">
+              <img src="assets/collections/Signature%20Scarves%20%288%29.jpeg"
+                   alt="Winza Heritage signature scarf design 08"
+                   loading="lazy">
+            </div>
+            <div class="detail-product-copy">
+              <span class="eyebrow">Design 08</span>
+              <h2>Signature Scarf</h2>
+              <p>Contact us to check the details of this design.</p>
+              <a class="text-link"
+                 href="https://wa.me/447301735163?text=Hello%20Winza%20Heritage%2C%20I%27d%20like%20to%20enquire%20about%20scarf%20design%2008."
+                 target="_blank" rel="noopener noreferrer">
+                Enquire about design 08 ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="detail-product">
+            <div class="detail-product-image">
+              <img src="assets/collections/Signature%20Scarves%20%289%29.jpeg"
+                   alt="Winza Heritage signature scarf design 09"
+                   loading="lazy">
+            </div>
+            <div class="detail-product-copy">
+              <span class="eyebrow">Design 09</span>
+              <h2>Signature Scarf</h2>
+              <p>Ask us about this design and how to order.</p>
+              <a class="text-link"
+                 href="https://wa.me/447301735163?text=Hello%20Winza%20Heritage%2C%20I%27d%20like%20to%20enquire%20about%20scarf%20design%2009."
+                 target="_blank" rel="noopener noreferrer">
+                Enquire about design 09 ↗
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="scarf-disclaimer">
+          Photographs showcase designs; stock, pricing, delivery and availability
+          must be confirmed directly with Winza Heritage.
+        </p>
+
+        <div class="availability-note">
+          <strong>Looking for a particular design?</strong>
+          <p>
+            Contact us about the scarves shown here or ask whether other
+            designs are available.
+          </p>
+          <a class="text-link"
+             href="https://wa.me/447301735163?text=Hello%20Winza%20Heritage%2C%20could%20you%20please%20share%20your%20currently%20available%20scarf%20designs%3F"
+             target="_blank" rel="noopener noreferrer">
+            Ask about available designs ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing call to action -->
+    <section class="cta-band">
+      <div class="container cta-inner">
+        <div>
+          <h2>Found a design you love?</h2>
+          <p>Ask about the product, availability, delivery or a collaboration.</p>
+        </div>
+        <a class="btn" href="contact.html">Contact Winza Heritage ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Winza Heritage</div>
+          <p>
+            Transcending Cultural Boundaries.<br>
+            Carry your story. Share your heritage.
+          </p>
+          <p>
+            In partnership with Savannah Women Tech for digital presence
+            and opportunity.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-heading">Explore</div>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="collections.html">All Collections</a>
+            <a href="textiles.html">Maasai Shukas &amp; Textiles</a>
+            <a href="about.html">About &amp; Consultancy</a>
+            <a href="contact.html">Contact &amp; Partnerships</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-heading">Get in touch</div>
+          <div class="footer-links">
+            <a href="mailto:winza3745@gmail.com">winza3745@gmail.com</a>
+            <a href="tel:+447301735163">+44 7301 735163</a>
+            <a href="https://wa.me/447301735163"
+               target="_blank" rel="noopener noreferrer">WhatsApp enquiries ↗</a>
+            <a href="https://www.instagram.com/winzaheritage/"
+               target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+            <a href="https://www.facebook.com/profile.php?id=61595426674538"
+               target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        © <span data-year></span> Winza Heritage. All rights reserved.
+        Product availability and shipping are confirmed by enquiry.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Enquiry assistant -->
+  <button class="chat-launch" type="button"
+          aria-label="Open Winza enquiry assistant">
+    Ask Winza ✦
+  </button>
+
+  <div class="chat-widget" aria-label="Winza Heritage enquiry assistant">
+    <div class="chat-head">
+      <strong>Winza enquiry assistant</strong>
+      <button type="button" class="chat-close" aria-label="Close assistant">×</button>
+    </div>
+
+    <div class="chat-body">
+      <p>How can we help you today?</p>
+
+      <div class="chat-options">
+        <button type="button"
+                data-answer="Please contact Winza Heritage to ask about available products and designs.">
+          Products and designs
+        </button>
+        <button type="button"
+                data-answer="Please visit our About page or contact us to discuss consultancy.">
+          Consultancy
+        </button>
+        <button type="button"
+                data-answer="Please contact Winza Heritage to confirm delivery options and shipping costs.">
+          Shipping and delivery
+        </button>
+        <button type="button"
+                data-answer="We welcome partnership enquiries. Please use our Contact page to get in touch.">
+          Partnerships
+        </button>
+      </div>
+
+      <div class="chat-answer" aria-live="polite"></div>
+      <p><a href="contact.html">Visit our Contact page ↗</a></p>
+    </div>
+  </div>
+
+  <a class="floating-whatsapp"
+     href="https://wa.me/447301735163"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Contact Winza Heritage on WhatsApp">
+    WhatsApp ↗
+  </a>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>
